@@ -23,24 +23,24 @@ GeneraButton.addEventListener('click',
     console.log(ValueKm);
     console.log(ValueEta);
   }
-  // calcolo del prezzo del biglietto
-  var prezzobase;
-  prezzobase = km * 0.21;
-  // creare lo sconto se possibile
-  var scontoGiovane;
-  scontoGiovane = (prezzobase * 20)/100
-  var scontoAnziani;
-  scontoAnziani = (prezzobase * 40)/100
-  // fornire/calcolare ed applicare lo sconto se possibile
-  var prezzoGiovane;
-  var prezzoAnziani;
-  if (eta < 18) {
-    prezzoGiovane = prezzobase - scontoGiovane;
-    // STAMPA COSA FARE
-  } else if (eta > 65) {
-    prezzoAnziani = prezzobase - scontoAnziani;
-    // STAMPA COSA FARE
-  } else {
-    // STAMPA COSA FARE
-  }
-);
+)
+
+var prezzobase;
+prezzobase = km * 0.21;
+// creare lo sconto se possibile
+var scontoGiovane;
+scontoGiovane = (prezzobase * 20)/100
+var scontoAnziani;
+scontoAnziani = (prezzobase * 40)/100
+// fornire/calcolare ed applicare lo sconto se possibile
+var prezzoGiovane;
+var prezzoAnziani;
+if (eta < 18) {
+  prezzoGiovane = prezzobase - scontoGiovane;
+  // STAMPA COSA FARE
+} else if (eta > 65) {
+  prezzoAnziani = prezzobase - scontoAnziani;
+  // STAMPA COSA FARE
+} else {
+  // STAMPA COSA FARE
+}
