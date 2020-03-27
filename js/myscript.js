@@ -22,6 +22,8 @@ GeneraButton.addEventListener('click',
     console.log(ValueNome);
     console.log(ValueKm);
     console.log(ValueEta);
+    // stampa i risultati
+    document.getElementById('onome').innerHTML = ValueNome
   }
 )
 
