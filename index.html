@@ -8,53 +8,54 @@
   <body>
     <!-- Tutto il contenuto della pagina -->
     <main>
-      <h1>TRENITALO</h1>
-      <!------------------------ sezione calcola il tuo biglietto -->
-      <section>
+      <h1 class="centratura">TRENITALO</h1>
+      <!-------------------------------------------------------------------------------------------------------------- sezione calcola il tuo biglietto -->
+      <section class="">
         <!-- titolo del calcolo -->
-        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <h2 class="centratura">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
         <!-- box calcolo del prezzo -->
         <div class="">
           <!-- informazioni biglietto -->
-          <div class="">
+          <div class="centratura">
             <input id="inome" type="text" name="" value="Inserisci il tuo nome">
             <input id="ikm" type="number" name="" value="">
-            <select id="isconto" class="" name="">
+            <select id="isconto" class="" name="sconto">
               <option value="Under"> Under </option>
               <option value="Adulto"> Adulto </option>
               <option value="Over"> Over </option>
             </select>
           </div>
           <!-- bottoni -->
-          <div class="">
+          <div class="centratura">
             <button id="generabutton" type="button" name="button"> Genera </button>
             <button id="annullabutton" type="button" name="button"> Annulla </button>
           </div>
         </div>
-
+        <!-- Scrips js che gestisce calcolo biglietto e comparsa dei risultati -->
         <script type="text/javascript" src="js/myscript.js">
 
         </script>
       </section>
-      <!--------------------------- sezione il tuo biglietto -->
-      <section>
-        <!-- titolo biglietto -->
-        <h2>IL TUO BIGLIETTO</h2>
-        <!-- box del tuo biglietto -->
+      <!-------------------------------------------------------------------------------------------------------------- sezione il tuo biglietto -->
+      <section id="sezionebiglietto" class="nascosto">
+        <!-- titolo; IL TUO biglietto -->
+        <h2 class="centratura">IL TUO BIGLIETTO</h2>
+        <!-- box Completo del tuo biglietto -->
         <div class="">
-          <!-- sottotitolo dettaglio passeggero -->
+          <!-- sottotitolo; dettaglio passeggero -->
           <div class="">
             <h3>DETTAGLIO PASSEGGERO</h3>
           </div>
-          <!-- info dettagli passeggero -->
-          <div class="">
+          <!-- riquadro interno dettaglio biglietto -->
+          <div class="bigliettoclass">
             <!-- sezione sinistra, nome passeggero -->
             <div class="">
               <h3>NOME PASSEGGERO</h3>
               <h4 id="onome"></h4>
             </div>
             <!-- sezione destra, tutti i dati del biglietto -->
-            <div class="">
+            <div class="dxbiglietto">
+              <!-- tabella contenente i dati passeggero -->
               <table>
                 <tr>
                   <th>Offerta</th>
