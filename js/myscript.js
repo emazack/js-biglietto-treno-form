@@ -29,18 +29,18 @@ GeneraButton.addEventListener('click',
     if (ValueEta === "Under") {
       var prezzoGiovane = prezzobase - scontoGiovane;
       // STAMPA prezzo giovani
-      document.getElementById('ocostobiglietto').innerHTML = prezzoGiovane;
+      document.getElementById('ocostobiglietto').innerHTML = prezzoGiovane.toFixed(2);
       // stampa tipo di biglietto giovane
       document.getElementById('otipobiglietto').innerHTML = "Biglietto Under 18";
     } else if (ValueEta === "Over") {
        var prezzoAnziani = prezzobase - scontoAnziani;
        // STAMPA prezzo anziani
-       document.getElementById('ocostobiglietto').innerHTML = prezzoAnziani;
+       document.getElementById('ocostobiglietto').innerHTML = prezzoAnziani.toFixed(2);
        // stampa tipo di biglietto anziani
        document.getElementById('otipobiglietto').innerHTML = "Biglietto Over 65";
     } else {
       // stampa prezzo Adulto
-      document.getElementById('ocostobiglietto').innerHTML = prezzobase;
+      document.getElementById('ocostobiglietto').innerHTML = prezzobase.toFixed(2);
       // stampa tipo biglietto adulto
       document.getElementById('otipobiglietto').innerHTML = "Biglietto Standard";
     }
