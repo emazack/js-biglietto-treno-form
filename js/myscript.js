@@ -59,6 +59,8 @@ console.log(AnnullaButton);
 // fai accadere qualcosa al click del dell'oggetto bottone
 AnnullaButton.addEventListener('click',
   function(){
+    // rendi invisibile la sezione di creazione di "Il tuo biglietto"
+    document.getElementById('sezionebiglietto').className = "nascosto";
     // modifica il VALUE dell'input, tornando a quello di start
     document.getElementById("inome").value = StartNome;
     document.getElementById("ikm").value = StartKm;
